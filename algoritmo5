@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var array [3][2]int
+	var n int
+	var linha uint = 0
+	var coluna uint = 0
+	for {
+		if linha == 3 {
+			break
+		}
+		fmt.Print("Insira o elemento da coluna 0 dessa linha da matriz: ")
+		fmt.Scan(&n)
+		array[linha][coluna] = n
+		coluna++
+		fmt.Print("Insira o elemento da coluna 1 dessa linha da matriz: ")
+		fmt.Scan(&n)
+		array[linha][coluna] = n
+		linha++
+		coluna--
+	}
+	fmt.Println(array)
+}
