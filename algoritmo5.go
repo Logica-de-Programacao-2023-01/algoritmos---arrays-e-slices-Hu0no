@@ -13,11 +13,11 @@ func main() {
 		if linha == 3 {
 			break
 		}
-		fmt.Print("Insira o elemento da coluna 0 dessa linha da matriz: ")
+		fmt.Printf("Insira o elemento da linha %d e coluna %d:  ", linha, coluna)
 		fmt.Scan(&n)
 		array[linha][coluna] = n
 		coluna++
-		fmt.Print("Insira o elemento da coluna 1 dessa linha da matriz: ")
+		fmt.Printf("Insira o elemento da linha %d e coluna %d: ", linha, coluna)
 		fmt.Scan(&n)
 		array[linha][coluna] = n
 		linha++
